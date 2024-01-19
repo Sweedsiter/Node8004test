@@ -1,0 +1,54 @@
+.MainDB {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  justify-content: center;
+  align-self: center;
+}
+.MainDB .Dashboard {
+  width: 100%;
+  padding: 3rem;
+  display: flex;
+  flex-direction: row;
+}
+
+.MainDB > .Dashboard .L h1 {
+  text-decoration: underline;
+}
+
+.MainDB .Dashboard .L {
+  margin-right: 2rem;
+}
+
+.MainDB .Dashboard > .L > div {
+  padding: 1.5rem;
+  border-bottom: 1px solid gray;
+}
+
+.MainDB .Dashboard > .L > div a {
+  color: black;
+  margin-left: 0.4rem;
+}
+
+/* media */
+@media only screen and (max-width: 600px) {
+  .MainDB .Dashboard {
+    flex-direction: column;
+    padding: 0;
+    margin: 0;
+  }
+  .MainDB .Dashboard .L {
+    width: 100%;
+    margin: 0rem 1rem 3rem 0rem;
+    left: 0;
+    padding: 2rem;
+  }
+  .MainDB .Dashboard {
+    margin: 0;
+  }
+
+  .MainDB .Dashboard .R {
+    margin: 0;
+    padding: 0;
+  }
+}

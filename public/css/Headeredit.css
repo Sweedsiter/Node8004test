@@ -1,0 +1,32 @@
+.Headeredit {
+  box-shadow: 1px 1px 3px gray;
+  padding: 2rem 1rem;
+  width: 100%;
+}
+
+.Headeredit > input {
+  margin: 1rem 1rem;
+}
+
+.Headeredit > button {
+  align-self: center;
+  align-items: center;
+}
+
+.Headeredit > div {
+  display: flex;
+
+  justify-content: center;
+  align-items: center;
+}
+
+.Headeredit > div button {
+  margin-right: 1rem;
+  background-color: black;
+  color: white;
+  padding: 4px 16px;
+  border-radius: 10px;
+}
+/* media */
+@media only screen and (max-width: 600px) {
+}

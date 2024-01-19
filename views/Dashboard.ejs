@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <%- include('./MainHead/head'); %>
+</head>
+<link href="/css/Dashboard.css" rel="stylesheet" type="text/css">
+<link href="/css/Forms.css" rel="stylesheet" type="text/css">
+<link href="/css/Home.css" rel="stylesheet" type="text/css">
+<body class='MainDB'  > 
+  <%- include('./Head/Nav'); %>
+    <header ><%- include('./header'); %></header>    
+    <div class="Dashboard">
+
+      <!-- Left Contents -->
+      <div class='L'>
+        <h1>Dashboard</h1>
+        <br/>        
+    
+        <div>
+          <p> <i class="fa-regular fa-pen-to-square icon"></i><a href="#">แก้ไข หน้าเว็บ ></a></p>         
+        </div>
+        <div>
+          <p> <i class="fa-regular fa-pen-to-square icon"></i><a href="#">แก้ไข Product></a></p>         
+        </div>
+        <div>
+          <p> <i class="fa-regular fa-pen-to-square icon"></i><a href="#">แก้ไข About ></a></p>         
+        </div>
+        <div>
+          <p> <i class="fa-regular fa-pen-to-square icon"></i><a href="#">แก้ไข Contact ></a></p>         
+        </div>  
+        <button style="margin: 2rem 3rem;"><a href="/logout" >ออกจากระบบ</a></button>       
+     </div>   
+
+     <!-- Right Contents -->
+      <div class='R' >
+        <%- include('./Head/Headeredit'); %>
+        <div class="Rc" style="color:<%= include('../public/avatar/page/fontColor.txt'); %>;background-color:<%= include('../public/avatar/page/backgroundColor.txt'); %>">     
+         <%- include('./Editor/PageColor'); %> 
+         <%- include('./Editor/HomeEdit001'); %>  
+         <%- include('./Editor/HomeEdit002'); %>   
+        </div>      
+      </div>
+        <!-- Right Contents -->
+    </div>   
+</body>
+<script src="/client.js"></script>
+</html>
